@@ -35,7 +35,7 @@ jobs:
        # Commit any changes made by the script
       - name: Commit files
         run: |
-          git config --local user.email "41898282+github-actions[bot]@users.noreply.github.com"
+          git config --local user.email "github-actions[bot]@users.noreply.github.com"
           git config --local user.name "github-actions[bot]"
           if ! git diff --exit-code; then
             git commit -a -m "Updated Site List"
